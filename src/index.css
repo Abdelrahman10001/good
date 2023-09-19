@@ -1,0 +1,240 @@
+:root {
+  --custom-color: #FF5733;
+  /* Define your custom primary color here */
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui -apple-system "Segoe UI"
+    Roboto "Helvetica Neue"
+    "Noto Sans"
+    "Liberation Sans"
+    Arial sans-serif "Apple Color Emoji"
+    "Segoe UI Emoji"
+    "Segoe UI Symbol"
+    "Noto Color Emoji"
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  background-color: #2C3E50;
+}
+
+
+
+a.navbar-brand,
+a.nav-link {
+  color: white;
+}
+
+a.navbar-brand:hover {
+  color: rgb(255, 255, 255);
+}
+
+
+a.nav-link:hover {
+  color: rgb(255, 255, 255);
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+
+.navbar-brand:focus {
+  color: white !important;
+}
+
+.nav-link {
+  margin: 0 10px;
+  font-weight: 700;
+  border-radius: 10px;
+ 
+}
+
+
+.nav-link:focus-within {
+  background-color: #1ABC9C;
+  color: white !important;
+  border-radius: 10px;
+  
+}
+
+
+.home {
+  background-color: #1ABC9C;
+  color: white;
+}
+
+.about {
+  background-color: #1ABC9C;
+  color: white;
+  min-height: 570px;
+}
+
+.contacts {
+  background-color: white;
+  color: white;
+  min-height: 570px;
+}
+
+input {
+  display: block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--bs-body-color);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  background-clip: padding-box;
+  border: solid 0 #dee2e6;
+  border-bottom-width: 1px;
+  outline: 0;
+  border-radius: var(--bs-border-radius);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+}
+
+
+.labelStyle {
+  z-index: 1;
+  bottom: 100%;
+}
+
+label {
+  color: #1ABC9C;
+  z-index: -1;
+  bottom: 0%;
+}
+
+
+.homeimg {
+  width: 250px;
+}
+
+.line {
+  height: 4px;
+  width: 80px;
+  background-color: white;
+}
+
+.star {
+  font-weight: 900;
+  color: white;
+}
+
+.toptext {
+  color: #2C3E50;
+}
+
+.lineContact {
+  height: 4px;
+  width: 80px;
+  background-color: #2C3E50;
+}
+
+.starContact {
+  font-weight: 900;
+  color: #2C3E50;
+}
+
+.fa-solid,
+.fas {
+  font-weight: 900;
+}
+
+footer {
+  background-color: #2C3E50;
+}
+
+.icon {
+  height: 35px;
+  width: 35px;
+  border: solid white 1px;
+  border-radius: 50%;
+  margin: 0 10px
+}
+
+
+.btn-success {
+
+  --bs-btn-bg: #1ABC9C !important;
+  --bs-btn-border-color: #1ABC9C !important;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #1ABC9C !important;
+  --bs-btn-hover-border-color: #1ABC9C !important;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #1ABC9C !important;
+  --bs-btn-active-border-color: none !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #1ABC9C !important;
+  --bs-btn-disabled-border-color: #1ABC9C !important;
+}
+
+.workingImgs img {
+  border-radius: 10px;
+}
+
+.portImg {
+  position: relative;
+
+}
+
+.portImg:hover .imgLayer {
+  opacity: 1;
+}
+
+.imgLayer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: #26a890ea;
+  display: flex;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+#lightBoxContainer {
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightBox {
+  width: 45%;
+  height: 65vh;
+}
+
+.portImg {
+  cursor: pointer;
+}
